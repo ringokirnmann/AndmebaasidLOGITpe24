@@ -10,7 +10,7 @@ Andmebaasiga seotud sql kood ja konspektid
 - [Põhimõisted](#-Põhimõisted)
 - [Andmetüübid](#-Andmetüübid)
 - [Piirangud](#-Piirangud)
-- [Seosed](#-seosed)
+- [Seosed](#-Tabelivahelised)
 
 ---
 ### Tunnis me kasutame andmebaasihaldussüsteemid:
