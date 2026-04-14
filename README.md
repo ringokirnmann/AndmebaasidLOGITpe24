@@ -4,6 +4,13 @@ Andmebaasiga seotud sql kood ja konspektid
 - SQL - Structured Query Language - Struktureeritud päringu keel
 - DDL - Data Definition Language - Andmebaasi struktuuri loomiseks - CREATE, ALTER
 - DML - Data Manipulation Language - Andmete lisamine ja uuendamine tabelisse - INSERT, UPDATE, DELETE
+---
+## Sisukord
+- 16 [Andmebaasihaldussüsteemid]
+- 26 [Põhimõisted]
+- 35 [Andmetüübid]
+- 42 [Piirangud]
+- 50 [Tabelivahelised seosed]
 
 ---
 ### Tunnis me kasutame andmebaasihaldussüsteemid:
