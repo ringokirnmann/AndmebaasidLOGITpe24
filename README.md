@@ -3,8 +3,8 @@ Andmebaasiga seotud sql kood ja konspektid
 
 
 ### Tunnis me kasutame andmebaasihaldussüsteemid:
-1. SQL Server Management Studio (SQL Serveri haldamiseks) <img width="550" height="569" alt="{DBF9C8F8-377D-41DC-BF4C-219C0879E7B0}" src="https://github.com/user-attachments/assets/440c5a82-d783-43a5-a087-1241bf4d2a51" />
-
+1. SQL Server Management Studio (SQL Serveri haldamiseks)
+<img width="550" height="569" alt="{DBF9C8F8-377D-41DC-BF4C-219C0879E7B0}" src="https://github.com/user-attachments/assets/440c5a82-d783-43a5-a087-1241bf4d2a51" />
 2. XAMPP -phpmyAdmin (mariaDB andmebaas) - vabavara
 
 ## Põhimõisted
