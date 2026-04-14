@@ -6,11 +6,11 @@ Andmebaasiga seotud sql kood ja konspektid
 - DML - Data Manipulation Language - Andmete lisamine ja uuendamine tabelisse - INSERT, UPDATE, DELETE
 ---
 ## Sisukord
-- [Andmebaasihaldussüsteemid]
-- [Põhimõisted]
-- [Andmetüübid]
-- [Piirangud]
-- [Tabelivahelised seosed]
+- [Andmebaasihaldussüsteemid](#-andmebaasihaldussüsteemid)
+- [Põhimõisted](#-Põhimõisted)
+- [Andmetüübid](#-Andmetüübid)
+- [Piirangud](#-Piirangud)
+- [Seosed](#-seosed)
 
 ---
 ### Tunnis me kasutame andmebaasihaldussüsteemid:
