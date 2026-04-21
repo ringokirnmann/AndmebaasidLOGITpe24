@@ -81,5 +81,17 @@ BEGIN
 END
 --kutse
 EXEC kustutaIdJargi '3';
+
+--otsing
+--protseduur mis otsib kõik kategooriad sisestatud 1 tähte järgi
+CREATE PROCEDURE otsing1taht
+@taht char(1)
+AS
+BEGIN
+	SELECT category_name FROM categories
+	WHERE category_name LIKE @taht + '%';
+END
+-- kutse
+EXEC otsing1taht 'r';
 ```
 ---
