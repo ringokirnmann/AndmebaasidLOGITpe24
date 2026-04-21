@@ -51,8 +51,23 @@ Andmebaasiga seotud sql kood ja konspektid
 ---
 - Üks - ühele (nt mees --naine)
 - Üks - mitmele (õpilane käib erinevates õppeainetes)
-  
+
   <img width="873" height="366" alt="{B7114448-2965-4A96-9A7A-38744F7448E3}" src="https://github.com/user-attachments/assets/f8cbfe0f-d37b-4858-b96a-8f3bb376f907" />
 
+## Stored procedure
+salvestatud protseduurid - sama mis on funktsioonid programmeerimises - mingi tegevus(ed), mida saab automaatselt teha (INSERT, SELECT, UPDATE, DELETE)
+```sql
+--protseduur, mis täidab tabeli
+CREATE PROCEDURE lisaKategooria
+@nimi varchar(15)
+AS
+BEGIN
+	INSERT INTO categories
+	VALUES (@nimi)
+	SELECT * FROM categories;
+END
+--kutse
+EXEC lisaKategooria 'test';
+```
 - Mitu - mitmele (nt õpilane - õpetaja)
 ---
