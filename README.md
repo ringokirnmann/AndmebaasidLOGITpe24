@@ -107,5 +107,56 @@ BEGIN
 END
 --kutse
 EXEC uuendaKategooria 4, 'jope'
+
+--iseseisvalt: vali tabel ja kirjuta 3 protseduuri
+
+--kliendi lisamine
+
+CREATE PROCEDURE lisaKlient
+@eesnimi varchar(25),
+@perenimi varchar(30),
+@telefon char(13),
+@email varchar(25),
+@tanav varchar(25),
+@linn varchar(25),
+@maakond varchar(25),
+@zip char(5)
+AS
+BEGIN
+    INSERT INTO customers
+    VALUES (@eesnimi, @perenimi, @telefon, @email, @tanav, @linn, @maakond, @zip);
+
+    SELECT * FROM customers;
+END
+
+--kutse
+EXEC lisaKlient 'Toom', 'Kasek', '5551234', 'mari.kask@gmail.com', 'Pargi 5', 'Tallinn', 'Harjumaa', '10115';
+
+--kliendi kustutamine id jargi
+CREATE PROCEDURE kustutaKlient
+@id int
+AS
+BEGIN
+    SELECT * FROM customers;
+
+    DELETE FROM customers
+    WHERE customer_id = @id;
+
+    SELECT * FROM customers;
+END
+--kutse
+EXEC kustutaKlient 3;
+
+--kliendi otsimine nime järgi
+CREATE PROCEDURE otsiKlientNimeJargi
+@taht char(1)
+AS
+BEGIN
+    SELECT first_name, last_name
+    FROM customers
+    WHERE first_name LIKE @taht + '%';
+END
+--kutse
+EXEC otsiKlientNimeJargi 'M';
 ```
 ---
