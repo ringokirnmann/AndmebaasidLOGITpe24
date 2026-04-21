@@ -93,5 +93,19 @@ BEGIN
 END
 -- kutse
 EXEC otsing1taht 'r';
+
+--protseduur, mis uuendab nimed sisestatud id jargi
+CREATE PROCEDURE uuendaKategooria
+@id int,
+@uuendatudNimi varchar(20)
+AS
+BEGIN
+	SELECT * FROM categories;
+	UPDATE categories SET category_name=@uuendatudNimi
+	WHERE category_id=@id;
+	SELECT * FROM categories;
+END
+--kutse
+EXEC uuendaKategooria 4, 'jope'
 ```
 ---
