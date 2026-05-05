@@ -67,6 +67,46 @@ ORDER by hind DESC;
 -- mark algab C tähega
 select mark from auto
 where mark LIKE 'C%';
+-- mark sisaldab c täht
+Select mark from auto
+where mark like '%C%';
+--hind on vahemikus 2000 kuni 8000 eurot
+select mark, autonumber, hind
+from auto
+where hind > 2000 and hind > 8000
+-- teine variant
+select mark, autonumber, hind
+from auto
+where hind between 200000 and 800000;
+
+--kombineeritud tingimused (AND, OR, NOT)
+Select mark, autonumber, hind
+from auto
+where mark not like 'BMW' OR hind <=100000;
+
+--vaade loomine - VIEW
+CREATE VIEW pontiacAutod
+AS
+Select mark, autonumber, hind
+FROM auto
+WHERE mark LIKE 'Pontiac';
+
+--view kasutamine:
+Select * from pontiacAutod;
+
+--agregaatfunktsioonid - SUM, MAX, MIN, AVG, COUNT- kogus
+
+-- Leia mitu autot on tabelis
+SELECT COUNT(*) AS autodeArv FROM auto;
+
+-- Leia keskmine autohind
+SELECT AVG(hind) AS 'autoKeskmineHind' FROM auto;
+
+-- Leia keskmine autohind iga marki kohta
+SELECT mark, AVG(hind) AS 'auto Keskmine Hind'
+from auto
+group by mark;
+
 ```
 
 <img width="721" height="778" alt="{7DAB2F0E-DD70-418F-9B54-E8ABD79C8607}" src="https://github.com/user-attachments/assets/095a2cb5-cd97-4d08-9c7a-1ecb5d50a728" />
