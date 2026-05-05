@@ -64,6 +64,9 @@ Select mark, mudel, hind from auto;
 select mark, mudel, hind
 from auto
 ORDER by hind DESC;
+-- mark algab C tähega
+select mark from auto
+where mark LIKE 'C%';
 ```
 
 <img width="721" height="778" alt="{7DAB2F0E-DD70-418F-9B54-E8ABD79C8607}" src="https://github.com/user-attachments/assets/095a2cb5-cd97-4d08-9c7a-1ecb5d50a728" />
