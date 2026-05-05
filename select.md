@@ -1,6 +1,6 @@
 <img width="1033" height="802" alt="{E226C1A4-1546-42D9-A9B6-03AEC162F299}" src="https://github.com/user-attachments/assets/4f9611d8-0d01-4ff6-840c-6234c34fd4ec" />
 
-sql
+```sql
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('194BTx', 'Plymouth', 'Grand Voyager', 1996, 'Blue', '€5244,26');
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('860vNs', 'Mazda', '626', 1984, 'Teal', '€8684,19');
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('1974cF', 'Mercury', 'Tracer', 1999, 'Crimson', '€9625,08');
@@ -51,4 +51,4 @@ insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('182Fi3'
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('848gdI', 'Chevrolet', 'Cobalt', 2009, 'Khaki', '€6513,74');
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('828zA8', 'Hummer', 'H1', 1996, 'Green', '€2277,56');
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('7812V4', 'Chevrolet', 'Silverado 2500', 2006, 'Green', '€6382,49');
-'''
+```
