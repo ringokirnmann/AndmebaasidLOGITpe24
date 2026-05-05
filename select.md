@@ -52,3 +52,18 @@ insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('848gdI'
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('828zA8', 'Hummer', 'H1', 1996, 'Green', '€2277,56');
 insert into auto (autonumber, mark, mudel, v_aasta, varv, hind) values ('7812V4', 'Chevrolet', 'Silverado 2500', 2006, 'Green', '€6382,49');
 ```
+
+```sql
+drop table auto;
+-- Näita kõik
+Select * from auto;
+-- Näita ainult mark, mudel ja hind
+Select mark, mudel, hind from auto;
+--tingimused
+--sorteerimine - order by kasvavalt, desc- kahanevalt
+select mark, mudel, hind
+from auto
+ORDER by hind DESC;
+```
+
+<img width="721" height="778" alt="{7DAB2F0E-DD70-418F-9B54-E8ABD79C8607}" src="https://github.com/user-attachments/assets/095a2cb5-cd97-4d08-9c7a-1ecb5d50a728" />
