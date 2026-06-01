@@ -306,6 +306,8 @@ Superkey      | Jah       | Jah            |
 Candidate Key | Jah       | Jah            |
 Alternate Key | Jah       | Jah            |
 
+Kõik näited on tehtud veebilehel www.db-fiddle.com MySQL v8ga
+
 # Kasutatud allikad
 
 1. https://www.w3schools.com/sql/sql_primarykey.asp
