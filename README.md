@@ -6,11 +6,14 @@ Andmebaasiga seotud sql kood ja konspektid
 - DML - Data Manipulation Language - Andmete lisamine ja uuendamine tabelisse - INSERT, UPDATE, DELETE
 ---
 ## Sisukord
-- [Andmebaasihaldussüsteemid](#-andmebaasihaldussüsteemid)
-- [Põhimõisted](#-Põhimõisted)
-- [Andmetüübid](#-Andmetüübid)
-- [Piirangud](#-Piirangud)
-- [Seosed](#-Tabelivahelised)
+1. [Andmebaasihaldussüsteemid](#andmebaasihaldussüsteemid)
+2. [Põhimõisted](#põhimõisted)
+3. [Andmetüübid](#andmetüübid)
+4. [Piirangud](#piirangud)
+5. [Seosed](#tabelivahelised-seosed)
+6. [Stored Procedure](#stored-procedure)
+7. [Navigeerimismenüü (Minu IT-Portfoolio)](#%EF%B8%8F-navigeerimismenüü-minu-it-portfoolio)
+8. [Andmebaasi SQL Skriptid](#-andmebaasi-sql-skriptid-koodifailid)
 
 ---
 ### Tunnis me kasutame andmebaasihaldussüsteemid:
@@ -25,19 +28,44 @@ Andmebaasiga seotud sql kood ja konspektid
 ---
 ## Põhimõisted
 ---
-- Andmebaas - Infokogum mis sisaldab infot nt telefoniraamat (struktureeritud andmete kogum)
-- Tabel - olem (entity)
-- Veerg - väli (field)
-- Rida - kirje (record)
-- Primaarne võti -PK-Primary Key - veerg (tavaliselt nimega id) unikaalse identifikaatoriga mis eristab iga kirjet
-- Välisvõti (võõrvõti) -FK-Foreign Key - veerg, mis loob seose teise tabeli primaarvõtmega
+## Põhimõisted
+
+* **Andmebaas** - Infokogum mis sisaldab infot nt telefoniraamat (struktureeritud andmete kogum).
+* **Andmebaasihaldussüsteem (DBMS)** - Tarkvara, mida kasutatakse andmebaaside loomiseks, haldamiseks ja andmete töötlemiseks (nt MySQL, MS SQL Server).
+* **Tabel** - olem (entity), mis koosneb ridadest ja veergudest.
+* **Veerg (atribuut)** - väli (field), mis määratleb ära tabelisse sisestatava andmevälja omaduse ja tüübi.
+* **Rida (kirje)** - kirje (record), mis kujutab endast ühte terviklikku andmeobjekti tabelis.
+* **Primaarne võti (Primary Key)** - PK - veerg (tavaliselt nimega id) unikaalse identifikaatoriga mis eristab iga kirjet.
+* **Välisvõti (võõrvõti) (Foreign Key)** - FK - veerg, mis loob seose teise tabeli primaarvõtmega.
+* **Indeks** - Andmebaasi struktuur, mis kiirendab andmete otsimist tabelist (nagu raamatu sisukord).
+* **Vaade (VIEW)** - Virtuaalne tabel, mille sisu on määratud SQL-päringu tulemusega (salvestatud päring).
+* **Päring (SELECT)** - SQL lause, mida kasutatakse andmete küsimiseks ja kuvamiseks andmebaasist.
+* **Tingimus (WHERE)** - Päringu osa, mida kasutatakse andmete filtreerimiseks vastavalt määratud kriteeriumile.
+* **Sorteerimine (ORDER BY)** - Päringu osa, mis seab tulemused soovitud järjekorda (kas kasvavalt või kahanevalt).
+* **Grupeerimine (GROUP BY)** - Kasutatakse ridade koondamiseks kokkuvõtvate funktsioonide (nt SUM, COUNT) abil.
+* **Liitmine (JOIN)** - Operatsioon kahe või enama tabeli ridade ühendamiseks nendevaheliste seotud veergude põhjal.
+* **Relatsioon** - Tabelitevaheline loogiline suhe või seos relatsioonilises andmebaasis.
+* **Skeem** - Andmebaasi loogiline struktuur, mis kirjeldab tabeleid, välju, seoseid ja piiranguid.
+* **Trigger** - Spetsiaalne salvestatud protseduur, mis käivitub andmebaasis automaatselt mingi sündmuse (nt INSERT, UPDATE, DELETE) peale.
+* **Kasutaja ja õigused (GRANT, REVOKE)** - SQL käsud andmebaasi kasutajate õiguste haldamiseks (`GRANT` annab õigusi, `REVOKE` võtab õigusi ära).
 ---
 ## Andmetüübid
 ---
-- INT, float, decimal(6,2) - numbrilised
-- varchar(50), char(6) - tekst/sümbolid
-- boolean, bool, bit - loogiline tüüp
-- date, time, datetime - kuupäevad
+* **Numbrilised tüübid:**
+  * **INT** - Täisarv (tavaline suurus).
+  * **SMALLINT** - Väike täisarv (kasutatakse mälu säästmiseks).
+  * **DECIMAL** - Täpne komakohaga arv, kus saab määrata pikkuse ja komakohad (nt `DECIMAL(6,2)`).
+  * **FLOAT** - Ligikaudne ujuvkomaarv suurte matemaatiliste arvutuste jaoks.
+* **Tekst / Sümbolid:**
+  * **CHAR** - Fikseeritud pikkusega tekst (nt `CHAR(6)` - täidab tühikutega, kui tekst on lühem).
+  * **VARCHAR** - Muutuva pikkusega tekst (nt `VARCHAR(50)` - võtab täpselt nii palju ruumi kui sisestatud tekst).
+  * **TEXT** - Suuremahuline tekst (pikemad kirjeldused ja artiklid).
+* **Loogiline tüüp:**
+  * **BOOLEAN** - Loogiline väärtus, mis saab olla kas TÕENE või VÄÄR (`TRUE` / `FALSE`, mõnes süsteemis `bool` või `bit`).
+* **Kuupäevad ja kellaajad:**
+  * **DATE** - Ainult kuupäev (`YYYY-MM-DD`).
+  * **TIME** - Ainult kellaaeg (`HH:MM:SS`).
+  * **DATETIME** - Kombineeritud kuupäev ja kellaaeg ühes väljas.
 ---
 ## Piirangud
 ---
