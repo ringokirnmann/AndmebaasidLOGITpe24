@@ -159,4 +159,38 @@ END
 --kutse
 EXEC otsiKlientNimeJargi 'M';
 ```
+# Minu IT-Portfoolio
+
+Tere tulemast minu iseseisvate tööde ja andmebaaside portfooliolehele! 
+
+---
+
+## Navigeerimismenüü
+
+Vali siit huvipakkuv teema, et näha põhjalikumaid selgitusi ja näiteid:
+
+* [Andmebaasi võtmed (Keys)](keys.md) — *Põhjalik ülevaade andmebaasi võtmete tüüpidest (Primary, Foreign jne).*
+* [Küsimused ja vastused](kysimused.md) — *20 küsimust DDLi ja DMLi kohta*
+* [SQL Select päringud](select.md) — *Andmete valimise ja filtreerimise ülesanded.*
+
+---
+
+## Andmebaasi SQL Skriptid (Koodifailid)
+
+Siit leiad kõik kursuse jooksul kirjutatud SQL laused ja tabelite loomise skriptid mida olen salvestanud:
+
+### Tabelite loomine ja struktuur
+* [CreateTablelaused.sql](CreateTablelaused.sql) — *Tabelite loomise algsed skriptid.*
+* [ForeignKey.sql](ForeignKey.sql) — *Esimesed katsetused võõrvõtmetega.*
+* [uusForeignKey.sql](uusForeignKey.sql) (ja [fail ilma laiendita](uusForeignKey)) — *Täiendatud võõrvõtmete seosed.*
+
+### Hindelised ja iseseisvad tööd
+* [hindelineylesanne.sql](hindelineylesanne.sql) — *Esimene suurem hindeline töö.*
+* [hindelineylautod.sql](hindelineylautod.sql) — *Autode andmebaasi hindeline ülesanne.*
+* [ylesanneteinetoo.sql](ylesanneteinetoo.sql) — *Teine iseseisev praktiline töö.*
+
+### Harjutused ja näidised
+* [salesproduction.sql](salesproduction.sql)
+* [a.sql](a.sql)
+
 ---
