@@ -31,6 +31,9 @@ Tabeli näidisandmed:
 INSERT INTO Opilased VALUES (1, 'Mari');
 INSERT INTO Opilased VALUES (2, 'Jaan');
 ```
+
+<img width="979" height="556" alt="image" src="https://github.com/user-attachments/assets/8f894d56-e344-4c91-b303-111583be4874" />
+
 ---
 
 ## 2. Foreign Key
@@ -64,6 +67,10 @@ CREATE TABLE Registreerimised (
         REFERENCES Kursused(kursus_id)
 );
 ```
+
+<img width="1055" height="467" alt="image" src="https://github.com/user-attachments/assets/99997291-4767-414d-8229-ae4c144b747b" />
+
+
 ---
 
 ## 3. Unique Key
@@ -89,6 +96,10 @@ CREATE TABLE Kasutajad (
     email VARCHAR(100) UNIQUE
 );
 ```
+
+<img width="851" height="403" alt="image" src="https://github.com/user-attachments/assets/d96cddb7-5c9f-42ec-9896-f843dcacceb5" />
+
+
 ---
 
 ## 4. Simple Key
@@ -113,6 +124,10 @@ CREATE TABLE Tooted (
     nimetus VARCHAR(100)
 );
 ```
+
+<img width="855" height="400" alt="image" src="https://github.com/user-attachments/assets/8c8f1744-865f-405c-a7f2-3524c4a9499b" />
+
+
 ---
 
 ## 5. Composite Key
@@ -139,6 +154,10 @@ CREATE TABLE Hinded (
     PRIMARY KEY (opilane_id, aine_id)
 );
 ```
+
+<img width="863" height="415" alt="image" src="https://github.com/user-attachments/assets/77ff27c1-defd-4402-b50d-7a22de25678f" />
+
+
 ---
 
 ## 6. Compound Key
@@ -165,6 +184,10 @@ CREATE TABLE Tellimused (
     PRIMARY KEY (klient_id, toode_id)
 );
 ```
+
+<img width="874" height="409" alt="image" src="https://github.com/user-attachments/assets/0103f4bc-3eb6-4ed5-a13a-7d9bd7eb6d34" />
+
+
 ---
 
 ## 7. Superkey
@@ -192,6 +215,10 @@ CREATE TABLE TooTajad (
     nimi VARCHAR(50)
 );
 ```
+
+<img width="856" height="434" alt="image" src="https://github.com/user-attachments/assets/f96575d8-facb-4abe-89cc-5151985c0154" />
+
+
 
 Superkey näited:
 
@@ -225,6 +252,10 @@ isikukood
 
 Mõlemad võivad olla Candidate Key'd.
 
+
+<img width="856" height="434" alt="image" src="https://github.com/user-attachments/assets/e0de44bf-089f-4b1c-a998-72c53798eea7" />
+
+
 ---
 
 ## 9. Alternate Key
@@ -250,6 +281,9 @@ CREATE TABLE Opetajad (
     nimi VARCHAR(50)
 );
 ```
+
+<img width="851" height="436" alt="image" src="https://github.com/user-attachments/assets/62b26cd4-addf-4778-84af-659ec7bb9a0f" />
+
 
 Siin:
 
