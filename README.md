@@ -12,8 +12,9 @@ Andmebaasiga seotud sql kood ja konspektid
 4. [Piirangud](#piirangud)
 5. [Seosed](#tabelivahelised-seosed)
 6. [Stored Procedure](#stored-procedure)
-7. [Navigeerimismenüü (Minu IT-Portfoolio)](#%EF%B8%8F-navigeerimismenüü-minu-it-portfoolio)
+7. [Navigeerimismenüü (Minu IT-Portfoolio)](#navigeerimismenüü)
 8. [Andmebaasi SQL Skriptid](#-andmebaasi-sql-skriptid-koodifailid)
+9. [Kodutöö keys.md](keys.md)
 
 ---
 ### Tunnis me kasutame andmebaasihaldussüsteemid:
